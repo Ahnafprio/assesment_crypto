@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_marginTop="40pt"
+        android:id="@+id/addressInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Ethereum Address"
+        android:inputType="text"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/scanQRButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scan QR Code"
+        android:layout_below="@id/addressInput"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/fetchBalanceButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fetch Balance and Nonce"
+        android:layout_below="@id/scanQRButton"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/balanceTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Balance: "
+        android:layout_below="@id/fetchBalanceButton"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/nonceTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nonce: "
+        android:layout_below="@id/balanceTextView"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>
